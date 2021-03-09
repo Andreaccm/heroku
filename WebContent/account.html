@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title></title>
+<link rel="stylesheet" href="css/styleP.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body>
+    <section class="seccion-perfil-usuario">
+        <div class="perfil-usuario-header">
+            <div class="perfil-usuario-portada">
+                <div class="perfil-usuario-avatar">
+                    <img src="imgenes/user.jpg" alt="img-avatar">
+                    <button type="button" class="boton-avatar">
+                        <i class="far fa-image"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="perfil-usuario-body">
+            <div class="perfil-usuario-bio">
+                <h3 class="titulo">User</h3>
+                <p class="texto"></p>
+            </div>
+            <div class="perfil-usuario-footer">
+                <ul class="lista-datos">
+                    <li><i class="icono fas fa-user"></i>Name:<div id="name"></div></li>
+                    <li><i class="icono fa fa-address-book"></i>email:<div id="name"></div></li>
+                    <li><i class="icono fa fa-phone"></i>Phone:<div id="phone"></div></li>
+                    <li><i class="icono fas fa-calendar-alt"></i>Date:<div id="date"></div></li>
+                </ul>
+                <ul class="lista-datos">
+                    <li><i class="icono fa fa-map-marker"></i>Location:<div id="location"></div></li>
+                    <li><i class="icono fa fa-university"></i>University:<div id="uni"></div></li>
+                    <li><i class="icono fa fa-graduation-cap"></i>Studies:<div id="studies"></div></li>
+                </ul>
+                <br> 
+                <form action="update.html" method="post">
+                	<input type ="submit" value="Update">
+                </form>
+                <form action="servletdelete" method="post">
+                	<input type ="submit" value="Delete">
+                </form>
+                <form action="login.html" method="post">
+                	<input type ="submit" value="Log in">
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
